@@ -1,0 +1,10 @@
+import java.util.Calendar;
+import java.util.Locale;
+
+class Solution{
+    
+static String getDay(String d, String m, String y){
+    Calendar c = Calendar.getInstance();
+    c.set(Integer.parseInt(y), Integer.parseInt(m)-1, Integer.parseInt(d));
+    return c.getDisplayName(Calendar.DAY_OF_WEEK, Calendar.LONG,Locale.US).toUpperCase();
+}

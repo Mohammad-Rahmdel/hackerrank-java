@@ -1,0 +1,14 @@
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        int x = 0;
+        Scanner s = new Scanner(System.in);
+        while(s.hasNext()==true){
+            x++;
+            System.out.println(x + " " + s.nextLine());
+        }
+        s.close();
+        
+    }
+}
