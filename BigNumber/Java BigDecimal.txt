@@ -1,0 +1,17 @@
+        //Write your code here
+        
+        for(int i=0; i<n; i++){
+            int k = i;
+            BigDecimal min = new BigDecimal(s[i]);
+            for(int j=i+1; j<n; j++){
+                BigDecimal cmp = new BigDecimal(s[j]);
+                if(cmp.compareTo(min)>0)
+                {
+                    min = new BigDecimal(s[j]);
+                    k = j;
+                }
+            }
+            String tmp = s[i];
+            s[i] = s[k];
+            s[k] = tmp;
+        }
